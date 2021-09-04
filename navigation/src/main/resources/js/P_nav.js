@@ -5,7 +5,7 @@ class P_nav {
 	}
 	
 	static get index() {
-		return sessionStorage.getItem("plugin_navigation_navigationIndex");
+		return parseInt(sessionStorage.getItem("plugin_navigation_navigationIndex"));
 	}
 	
 	static set pages(pages) {

@@ -11,7 +11,7 @@ $.fn.navigation = function () {
 		previousElement.addClass('plugin_navigation_previous');
 		
 		// Add click event
-		previousElement.click(() => {
+		previousElement.on('click', function() {
 			P_nav.index--;
 			P_nav.refresh();
 		});
@@ -19,7 +19,7 @@ $.fn.navigation = function () {
 		let nextElement = $(this).children().eq(1);
 		nextElement.addClass('plugin_navigation_next');
 		
-		nextElement.click(() => {
+		nextElement.on('click', function() {
 			P_nav.index++;
 			P_nav.refresh();
 		});
